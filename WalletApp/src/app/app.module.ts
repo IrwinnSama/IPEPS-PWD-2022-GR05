@@ -20,12 +20,16 @@ import {MatListModule} from "@angular/material/list";
 import {MatTableModule} from "@angular/material/table";
 import {CdkTableModule} from "@angular/cdk/table";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { DocumentComponent } from './modules/document/page/document.component';
+import {FormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillsComponent,
+    DocumentComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,9 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatListModule,
     MatTableModule,
     CdkTableModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true

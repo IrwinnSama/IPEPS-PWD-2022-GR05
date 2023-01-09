@@ -14,7 +14,7 @@ public class RessourceServerConfiguration extends ResourceServerConfigurerAdapte
         // http.authorizeRequests().antMatchers("/login","/oauth/token", "/account/signup", "/account/signin","/account/refresh", "/salary/list","/salary/create", "/salary/update", "/salary/detail/{id}", "/salary/delete/{id}").permitAll();
         http.authorizeRequests().antMatchers("/login","/oauth/token", "/account/signup", "/account/signin","/account/refresh", "/salary/list","/salary/create", "/salary/update", "/salary/detail/{id}", "/salary/delete/{id}",
                                             "/employee/list","/employee/create", "/employee/update", "/employee/detail/{id}", "/employee/delete/{id}", "/skill/create", "/skill/list",
-                                            "/organization/list","/organization/create", "/organization/update", "/organization/detail/{id}", "/organization/delete/{id}").permitAll();
+                                            "/document/list","/document/create", "/document/update", "/document/detail/{id}", "/document/delete/{id}").permitAll();
 
         http.authorizeRequests().anyRequest().authenticated();
     }
